@@ -9,7 +9,7 @@
 
                 <div class="card-body">
                 	<h4>Edit Form</h4>
-                  <form method="post" action="{{ route('todos.update') }}">
+                  <form method="post" action="{{ route('todos.update',$todos->id) }}">
                   	
                   	@method('PUT')
                   	@csrf
